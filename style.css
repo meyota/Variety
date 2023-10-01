@@ -5,11 +5,11 @@
     outline: none;
     text-decoration: none;
 }
-
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.45;
 }
-
 img {
     max-width: 100%;
 }
@@ -17,16 +17,21 @@ img {
 /* Header */
 
 .header {
+    background-color: #F5F5F7;
+    position: sticky;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    left: 0;
+    padding: 20px 20px;
+
+    box-shadow: 0px 5px 15px rgb(0, 0, 0, 0.09);
+}
+.head-nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(183, 188, 192);
-    padding: 30px 30px;
-    box-shadow: 0px 5px 15px rgb(0, 0, 0, 0.09);
-    /* position: sticky;
-    z-index: 999;
-    top: 0;
-    left: 0; */
+    height: 44px;
 }
 .navbar ul{
     display: flex;
@@ -80,7 +85,7 @@ img {
     height: 80vh;
     background-size: cover;
     padding: 0 50px;
-    background-position: top 48% right 0;
+    background-position: center;
     align-items: flex-start;
     display: flex;
     flex-direction: column;
@@ -828,6 +833,8 @@ img {
 /* ------------Contact Page----------- */
 #shop-cover.cover5 {
     background-image: url(images/contact/contact\ ban.jpg);
+    background-position: center;
+    background-size: cover;
 }
 .cover5 h2 {
     color: #fff;
@@ -937,8 +944,14 @@ img {
 }
 
 /* -----------Cart page----------- */
+.cart-cont{
+    width: 950px;
+    margin: 0 auto;
+}
 #shop-cover.cover6 {
     background-image: url(images/cart/cart2.jpg);
+    background-position: center;
+    background-size: cover;
 }
 .cart-shop {
     padding: 20px 40px;
@@ -947,9 +960,13 @@ img {
     width: 100%;
     border-collapse: collapse;
     table-layout: fixed;
-    white-space: nowrap;
-
-    
+    white-space: nowrap;    
+}
+thead tr {
+    text-align: center;
+}
+.cart-cont tbody tr td{
+    text-align: center;
 }
 .cart-info {
     display: flex;
@@ -963,7 +980,7 @@ thead {
     text-align: left;
     padding: 6px;
     color: #fff;
-    background: #ff523b;
+    background: goldenrod;
     font-weight: 600;
 }
 thead td {
@@ -1045,9 +1062,95 @@ tbody tr td {
     border: 2px solid transparent;
     font-size: 17px;
 }
+/* ----------Account page----------- */
+.Acct{
+    background-image: linear-gradient(rgba(0,0,50,08), rgba(0,0,50,0.8)), url('images/log\ \(1\).jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
 
-
-
+.form-box{
+    width: 380px;
+    height: 480px;
+    background: #F5F5F7;
+    margin: 0 auto;
+    padding: 5px;
+    overflow: hidden;
+    top: 50px;
+    right: 50px;
+    position: absolute;
+}
+.bttn-box{
+    width: 220px;
+    margin: 35px auto;
+    border-radius: 30px;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+}
+.toggle-bttn{
+    padding: 10px 30px;
+    position: relative;
+    border: 0;
+    cursor: pointer;
+    background: transparent;
+}
+#form-bttn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border-radius: 30px;
+    transition: .5s;
+}
+.input-cont{
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: 0.5s;
+}
+.form-input {
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    background: transparent;
+}
+.submit-bttn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border-radius: 30px;
+    display: block;
+    border: 0;
+    margin: auto;
+}
+.check-box{
+    margin: 30px 10px 30px 0;
+}
+.input-cont span {
+    color: #777;
+    font-size: 13px;
+    bottom: 65px;
+}
+.input-cont label{
+    padding-left: 50px;
+    font-size: 13px;
+}
+#login-form{
+    left: 50px;
+}
+#register-form{
+    left: 450px;
+}
 
 
 
