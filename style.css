@@ -305,7 +305,7 @@ img {
 
 .feedback {
     padding-top: 30px;
-    background-color: #868023b4;
+    background: linear-gradient(to right, #ff105f, #ffad06);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -346,7 +346,8 @@ img {
     color: #010802;
 }
 .feedback .news span {
-    color: coral;
+    color: #F5F5F7;
+    text-decoration: underline;
 }
 
 
@@ -766,7 +767,7 @@ img {
     padding: 20px 40px;
     display: flex;
     align-items: center;
-
+    justify-content: space-between;
 }
 #shop-cover.cover4 {
     background-image: url(images/about/about-ban.jpg);
@@ -779,12 +780,19 @@ img {
     color: #1b1a1a;
     font-size: 30px;
 }
-.abt img {
-    width: 50%;
-    height: auto;
+.abt a  {
+    width: 40%;
+    margin: 0 auto;
+    height: 550px;
 }
 .abt .abt-txt {
     padding-left: 40px;
+    width: 50%;
+}
+.abt .abt-txt p{
+    text-align: start;
+    line-height: 2;
+
 }
 
 /* ------------Service----------------- */
