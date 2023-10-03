@@ -80,7 +80,7 @@ img {
 
 /* Home */
 .cover {
-    background-image: url(images/pexels-freestocksorg-291762.jpg);
+    background-image: url(images/cover/main-cover.jpg);
     width: 100%;
     height: 80vh;
     background-size: cover;
@@ -125,22 +125,20 @@ img {
     text-align: center;
 }
 .prod .prod-cont {
-
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     padding-top: 20px;
-
 }
 .prod .product {
     width: 24%;
-    min-width: 250px;
-    padding: 10px 10px;
+    min-width: 230px;
+    padding: 10px 12px;
     border: 1px solid rgb(221, 203, 203);
     background-color: rgb(234, 238, 243);
-    border-radius: 15px;
+    border-radius: 20px;
     box-shadow: 15px 15px 20px rgb(0, 0, 0, 0.02);
-    margin: 10px 0px;
+    margin: 13px 0;
     transition: 0.3s ease;
     position: relative;
     cursor: pointer;
@@ -149,6 +147,7 @@ img {
 .prod .product img {
     width: 100%;
     height: 300px;
+    object-fit: cover;
     border-radius: 20px;
 }
 
@@ -201,32 +200,35 @@ img {
 }
 
 .offer-cont {
-    background-color: #577250bd;
+    background: linear-gradient(to bottom, #008080, #004d4d);
     margin-top: 10px;
     padding: 5px 0;
+    height: 40vh;
     
 }
 
 .offer-cont .offer {
     display: flex;
-    /* flex-wrap: wrap; */
     justify-content: center;
     padding: 0 5px;
     /* margin: 0 10px; */
     align-items: center;
-    /* background-color:#4a6653; */
+
 } 
 /* .offer {
     padding: 25px;
-    background-color: #39478f;
 } */
 
 .offer-cont .off-img {
-    padding: 5px 30px;
-    width: 300px;
-
-    /* width: 700px;
-    height: 400px; */
+    padding: 10px 30px;
+    width: 200px;
+}
+.offer-cont .off-img:hover{
+    transform: translateY(-5px);
+    transition: .3s ease;
+}
+.off-txt{
+    color: #f3f4f7;
 }
 .offer-cont .btn {
     display: inline-block;
@@ -292,12 +294,14 @@ img {
 }
 .Testimonial .col-3 P {
     color: blue;
-
+    font-size: 14px;
+    line-height: 1.3;
 }
 .Testimonial .col-3 .rating i{
     color: rgb(236, 203, 16);
     font-size: 14px;
-    padding-top: 7px;
+    padding-top: 10px;
+    margin-top: 10px;
 }
 .Testimonial .col-3 h3 {
     color: #39478f;
@@ -591,7 +595,7 @@ img {
 
 /* ----------Shop Page----------- */
 #shop-cover{
-    background-image: url(images/cover/cover\ 2.jpg);
+    background-image: url(images/cover/shop-cover.jpg);
     width: 100%;
     height: 40vh;
     background-size: cover;
@@ -703,6 +707,8 @@ img {
     color: #1b1a1a;
     font-size: 30px;
 }
+/* ---------------Blog------------- */
+
 .blog {
     padding: 20px 0px;
 
@@ -741,6 +747,12 @@ img {
     position: relative;
     transition: 0.5s;
     transition: 0.5s ease;
+}
+
+.blog-txt{
+    font-size: 14px;
+    line-height: 1.25;
+
 }
 .blog .blog-txt a::after {
     content: "";
