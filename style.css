@@ -9,9 +9,10 @@ body {
     font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 400;
     line-height: 1.45;
+
 }
 img {
-    max-width: 100%;
+    width: 100%;
 }
 
 /* Header */
@@ -32,11 +33,13 @@ img {
     justify-content: space-between;
     align-items: center;
     height: 44px;
+
 }
 .navbar ul{
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .navbar li{
@@ -1079,6 +1082,33 @@ tbody tr td {
     left: 450px;
 }
 /* ---------Media query---------- */
+/* @media (max-width: 2756px) {
+    .cover {
+        height: 55vh;
+    }
+    .prod .product img {
+        height: 700px;
+    }
+    .offer-cont {
+        height: 19vh;
+    }
+    .off-txt {
+        padding-left: 150px;
+        font-size: 20px;
+    }
+} */
+/* @media (max-width: 1440px) {
+    .offer-cont {
+        height: 18vh;
+    }
+    .cover {
+        height: 55vh;
+    }
+    .Acct {
+        height: 56vh;
+    }
+    
+} */
 @media (max-width: 912px) {
     .cover {
         height: 40vh;
@@ -1261,6 +1291,7 @@ tbody tr td {
 
 @media (max-width: 470px ) {
     /* single product */
+
     .prod-detail {
         padding: 10px 10px;
         display: flex;
